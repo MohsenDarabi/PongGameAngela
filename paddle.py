@@ -9,3 +9,9 @@ class Paddle(Turtle):
         self.color("white")
         self.penup()
         self.goto(pos_a, pos_b)
+
+    def go_up(self):
+        self.goto(self.xcor(), self.ycor() + 20)
+
+    def go_down(self):
+        self.goto(self.xcor(), self.ycor() - 20)
