@@ -19,12 +19,20 @@ screen.listen()
 screen.onkey(r_paddle.go_up,"Up")
 screen.onkey(r_paddle.go_down,"Down")
 
+height = screen.window_height()/2
+width = screen.window_width()/2
+print(height)
 
 game_is_on = True
 while game_is_on:
+    time.sleep(0.1)
     screen.update()
     ball.move()
-    time.sleep(0.1)
+
+    #Detect collision with wall
+    if ball.ycor() > 280 or ball.ycor() < -280:
+        ball.bounce()
+
 
 
 
