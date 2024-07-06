@@ -18,6 +18,8 @@ ball = Ball()
 screen.listen()
 screen.onkey(r_paddle.go_up,"Up")
 screen.onkey(r_paddle.go_down,"Down")
+screen.onkey(l_paddle.go_up,"q")
+screen.onkey(l_paddle.go_down,"a")
 
 height = screen.window_height()/2
 width = screen.window_width()/2
