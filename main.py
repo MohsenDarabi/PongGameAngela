@@ -18,10 +18,10 @@ l_paddle = Paddle(-350,0)
 ball = Ball()
 
 screen.listen()
-screen.onkey(r_paddle.go_up,"Up")
-screen.onkey(r_paddle.go_down,"Down")
-screen.onkey(l_paddle.go_up,"q")
-screen.onkey(l_paddle.go_down,"a")
+screen.onkeypress(r_paddle.go_up,"Up")
+screen.onkeypress(r_paddle.go_down,"Down")
+screen.onkeypress(l_paddle.go_up,"q")
+screen.onkeypress(l_paddle.go_down,"a")
 
 
 game_is_on = True
